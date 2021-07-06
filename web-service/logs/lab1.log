@@ -1,0 +1,17 @@
+    CREATE EXTERNAL TABLE IF NOT EXISTS type13 (g1 string,
+    g2 string, g3 string,g4 string,g5 string,
+    g6 string,g7 string,g8 string,g9 string,g10 string,g11 string,
+    g12 string,g13 string,g14 string,g15 string,g16 string,g17 string,g18 string,g19 string,g20 string,g21 string,g22 string)
+    ROW FORMAT DELIMITED FIELDS TERMINATED BY ' '
+    location '/log/';
+
+             select max(g19), max(g20),max(g21) ,g18 from type13 group by g18;
+             select max(g19), max(g20),max(g21)  from type13 ;
+             select max(g19), max(g20),max(g21) from type13 where g1 = ;
+             select max(g22) from type13;
+             select max(g22) g18 from type13 group by g18;
+             select count(g22) from type13 group by g22;
+
+
+     sqoop create-hive-table --connect jdbc:mysql://39.108.13.116:3306/shopping --username shopping
+     --password FXtMnMkPFHEdey5w --table a --hive-table type13 --fields-terminated-by ',' --hive-overwrite

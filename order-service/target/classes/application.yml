@@ -1,0 +1,64 @@
+nacos:
+  server-addr: 39.108.13.116:8848
+  username: nacos
+  password: nacos
+  # 命名空间，用作环境隔离
+
+application:
+  datacenterId: 2
+  workerId: 1
+server:
+  port : 8082
+spring:
+  application:
+    name: order-server
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://39.108.13.116:3306/shopping
+    username: shopping
+    password: FXtMnMkPFHEdey5w
+  redis:
+      host: localhost
+      port: 6379
+      password: avc123
+      timeout: 6000
+      jedis:
+        pool:
+          max-active: 100
+          max-idle: 16
+          max-wait: 1000ms
+          min-idle: 8
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      # 权限认证，nacos.core.auth.enabled=true 时需要添加
+      username: ${nacos.username}
+      password: ${nacos.password}
+      discovery:
+        server-addr: ${nacos.server-addr}
+        # 命名空间，用作环境隔离
+
+        # 分组，一般按照项目进行分组
+        group: SPRING_CLOUD_EXAMPLE_GROUP
+        # 自定义元数据
+        metadata:
+          # 版本
+          version: 1.0
+          # 地域
+          region: hangzhou
+mybatis-plus:
+  type-aliases-package: com.bibao.webserver
+
+  mapper-locations: classpath:mapping/*.xml
+
+  configuration:
+    # 是否开启自动驼峰命名规则映射:从数据库列名到Java属性驼峰命名的类似映射
+    map-underscore-to-camel-case: true
+    # 返回map时true:当查询数据为空时字段返回为null,false:不加这个查询数据为空时，字段将被隐藏
+    call-setters-on-nulls: true
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+logging:
+  file:
+    name: logs/order.log

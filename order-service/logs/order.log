@@ -1,0 +1,48 @@
+2021-06-23 17:30:05.535  INFO 47614 --- [main] com.bibao.orderserver.NacosConsumerApp   : No active profile set, falling back to default profiles: default
+2021-06-23 17:30:06.407  WARN 47614 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2021-06-23 17:30:06.609  INFO 47614 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-06-23 17:30:06.612  INFO 47614 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-06-23 17:30:06.642  INFO 47614 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2021-06-23 17:30:06.704  WARN 47614 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-06-23 17:30:06.872  INFO 47614 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=153746a7-5739-3936-bec7-b1cbd4a36803
+2021-06-23 17:30:07.714  INFO 47614 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-06-23 17:30:07.727  INFO 47614 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-23 17:30:07.727  INFO 47614 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-06-23 17:30:07.844  INFO 47614 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-23 17:30:07.844  INFO 47614 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2290 ms
+2021-06-23 17:30:10.331  INFO 47614 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-06-23 17:30:10.473  INFO 47614 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-06-23 17:30:10.506  WARN 47614 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-06-23 17:30:10.506  INFO 47614 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-23 17:30:10.512  WARN 47614 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-06-23 17:30:10.512  INFO 47614 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-23 17:30:10.732  INFO 47614 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-23 17:30:10.921  INFO 47614 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2021-06-23 17:30:16.866  INFO 47614 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-06-23 17:30:16.938  INFO 47614 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, SPRING_CLOUD_EXAMPLE_GROUP order-server 172.20.10.12:8082 register finished
+2021-06-23 17:30:16.941  INFO 47614 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-06-23 17:30:16.957  INFO 47614 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-06-23 17:30:16.993  INFO 47614 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-06-23 17:30:17.122  INFO 47614 --- [main] com.bibao.orderserver.NacosConsumerApp   : Started NacosConsumerApp in 22.446 seconds (JVM running for 22.967)
+2021-06-23 17:31:53.072  INFO 47614 --- [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-23 17:31:53.073  INFO 47614 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-23 17:31:53.098  INFO 47614 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2021-06-23 17:31:53.124  WARN 47614 --- [http-nio-8082-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-06-23 17:31:57.760  INFO 47614 --- [http-nio-8082-exec-3]                                          : org.apache.catalina.connector.RequestFacade@1c568790
+2021-06-23 17:31:57.776  INFO 47614 --- [http-nio-8082-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-23 17:31:57.782  WARN 47614 --- [http-nio-8082-exec-3] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2021-06-23 17:31:58.661  INFO 47614 --- [http-nio-8082-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-23 17:32:32.335  INFO 47614 --- [http-nio-8082-exec-4]                                          : org.apache.catalina.connector.RequestFacade@1c568790
+2021-06-23 17:32:49.936  INFO 47614 --- [http-nio-8082-exec-5]                                          : org.apache.catalina.connector.RequestFacade@1c568790
+2021-06-23 19:14:24.926  WARN 47614 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m44s8ms).
+2021-06-23 19:20:21.924  WARN 47614 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m56s999ms).
+2021-06-23 19:21:56.584  WARN 47614 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m34s660ms).
+2021-06-23 19:55:53.425  WARN 47614 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m56s702ms).
+2021-06-23 19:58:47.656  WARN 47614 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m39s686ms).
+2021-06-23 20:04:41.623  INFO 47614 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2021-06-23 20:04:41.628  INFO 47614 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2021-06-23 20:04:41.647  INFO 47614 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2021-06-23 20:04:53.154  WARN 47614 --- [SpringContextShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2021-06-23 20:04:53.155  INFO 47614 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-06-23 20:04:53.284  INFO 47614 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-23 20:04:53.288  INFO 47614 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
